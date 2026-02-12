@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c3l4xwi18iujr"]
+
+[ext_resource type="Script" uid="uid://ivfqdvytosjw" path="res://Scripts/LeftoverTray.gd" id="1_i16ws"]
+[ext_resource type="Texture2D" uid="uid://5muyfbpabaq2" path="res://Assets/Leftover tray.png" id="1_yrewx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yrewx"]
+size = Vector2(834, 381)
+
+[node name="Area2D" type="Area2D" unique_id=1017377210]
+script = ExtResource("1_i16ws")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1344979072]
+visible = false
+position = Vector2(-6, 24.5)
+shape = SubResource("RectangleShape2D_yrewx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=119077967]
+position = Vector2(226, -42)
+texture = ExtResource("1_yrewx")
+
+[node name="Slot1" type="Marker2D" parent="." unique_id=180393650]
+position = Vector2(1, -72)

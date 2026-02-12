@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://cagtqu77dmvtm"]
+
+[ext_resource type="Script" uid="uid://uqlevrtyfmkw" path="res://Scripts/Shelf.gd" id="2_ciy52"]
+[ext_resource type="Texture2D" uid="uid://dso6njbvuxqq5" path="res://Assets/AI Assets/Shelf.png" id="2_p8fi4"]
+[ext_resource type="Texture2D" uid="uid://bk1i130alhff7" path="res://Assets/AI Assets/AI Watermark.png" id="3_p8fi4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x3wpo"]
+size = Vector2(892.2903, 383.51254)
+
+[node name="Shelf" type="Area2D" unique_id=1158264265 groups=["shelves"]]
+z_index = -2
+scale = Vector2(1.6844293, 1.6844293)
+script = ExtResource("2_ciy52")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1978248324]
+position = Vector2(567.2546, 312.86566)
+scale = Vector2(1.0000002, 1.0000002)
+shape = SubResource("RectangleShape2D_x3wpo")
+
+[node name="Shelf" type="Sprite2D" parent="." unique_id=945782285]
+position = Vector2(568.006, 319.6928)
+scale = Vector2(0.53580016, 0.65943164)
+texture = ExtResource("2_p8fi4")
+region_enabled = true
+region_rect = Rect2(122.832825, 412.19675, 2118.8162, 966.5901)
+
+[node name="Shelf2" type="Sprite2D" parent="." unique_id=614542732]
+position = Vector2(96.175, 565.1766)
+scale = Vector2(0.8487522, 0.7926882)
+texture = ExtResource("3_p8fi4")
+region_enabled = true
+region_rect = Rect2(934.4022, 477.0789, 148.44763, 148.44772)
+
+[node name="Slot1" type="Marker2D" parent="." unique_id=179035590]
+position = Vector2(232.72495, 325.92023)
+scale = Vector2(0.41325575, 0.65777665)
+gizmo_extents = 38.8
+
+[node name="Slot2" type="Marker2D" parent="." unique_id=636692488]
+position = Vector2(569.93115, 325.92023)
+scale = Vector2(0.41325575, 0.65777665)
+gizmo_extents = 38.8
+
+[node name="Slot3" type="Marker2D" parent="." unique_id=1043418864]
+position = Vector2(931.4779, 325.92023)
+scale = Vector2(0.413252, 0.6577707)
+gizmo_extents = 38.8

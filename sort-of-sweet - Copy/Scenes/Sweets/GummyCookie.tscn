@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://clieapfe8eg61"]
+
+[ext_resource type="Script" uid="uid://c8nnhkubmeh4o" path="res://Scripts/Item.gd" id="2_cvq6o"]
+[ext_resource type="Texture2D" uid="uid://bfx6q0vxnsm28" path="res://Assets/AI Assets/Gummy Cookie.png" id="2_wkrbd"]
+[ext_resource type="Texture2D" uid="uid://bk1i130alhff7" path="res://Assets/AI Assets/AI Watermark.png" id="3_rwcjc"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_usam7"]
+radius = 60.666668
+height = 158.66667
+
+[node name="Area2D" type="Area2D" unique_id=907157646 groups=["items"]]
+scale = Vector2(0.75, 0.75)
+script = ExtResource("2_cvq6o")
+follow_speed = 13.0
+item_type = "GummyCookie"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=304816739]
+visible = false
+position = Vector2(-2, -0.6666641)
+shape = SubResource("CapsuleShape2D_usam7")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1323591355]
+texture = ExtResource("2_wkrbd")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=2130713158]
+position = Vector2(-52, 53.333336)
+scale = Vector2(0.15174128, 0.15174128)
+texture = ExtResource("3_rwcjc")
+region_enabled = true
+region_rect = Rect2(939.2871, 483.0371, 134.63867, 138.09094)

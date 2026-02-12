@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cfthgvadf713l"]
+
+[ext_resource type="Script" uid="uid://c8nnhkubmeh4o" path="res://Scripts/Item.gd" id="1_ga86j"]
+[ext_resource type="Texture2D" uid="uid://ctw47sn0hitm1" path="res://Assets/AI Assets/ChocoRed.png" id="2_n1o8j"]
+[ext_resource type="Texture2D" uid="uid://bk1i130alhff7" path="res://Assets/AI Assets/AI Watermark.png" id="3_80cds"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7jsd2"]
+radius = 38.666668
+height = 125.333336
+
+[node name="Area2D" type="Area2D" unique_id=907157646 groups=["items"]]
+scale = Vector2(0.75, 0.75)
+script = ExtResource("1_ga86j")
+follow_speed = 13.0
+item_type = "Grape"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=304816739]
+visible = false
+shape = SubResource("CapsuleShape2D_7jsd2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1323591355]
+texture = ExtResource("2_n1o8j")
+region_enabled = true
+region_rect = Rect2(28.122307, 0, 76.58035, 119.8165)
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=825328267]
+position = Vector2(-14.666666, 36)
+scale = Vector2(0.1712963, 0.17129633)
+texture = ExtResource("3_80cds")
+region_enabled = true
+region_rect = Rect2(939.2871, 479.58484, 144.99548, 151.90002)

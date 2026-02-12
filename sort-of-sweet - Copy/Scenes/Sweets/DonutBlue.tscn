@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bljaef2dan7d6"]
+
+[ext_resource type="Script" uid="uid://c8nnhkubmeh4o" path="res://Scripts/Item.gd" id="1_vwcqu"]
+[ext_resource type="Texture2D" uid="uid://bkydb2h40duei" path="res://Assets/AI Assets/Donut Blue.png" id="2_vwcqu"]
+[ext_resource type="Texture2D" uid="uid://bk1i130alhff7" path="res://Assets/AI Assets/AI Watermark.png" id="3_wrvk5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g86ho"]
+radius = 49.49523
+
+[node name="Area2D" type="Area2D" unique_id=907157646 groups=["items"]]
+scale = Vector2(0.75, 0.75)
+script = ExtResource("1_vwcqu")
+follow_speed = 13.0
+item_type = "DonutBlue"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=304816739]
+visible = false
+shape = SubResource("CircleShape2D_g86ho")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1323591355]
+texture = ExtResource("2_vwcqu")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=458224606]
+position = Vector2(-30.666666, 25.333334)
+scale = Vector2(0.13888893, 0.13888893)
+texture = ExtResource("3_wrvk5")
+region_enabled = true
+region_rect = Rect2(941.01306, 479.58484, 144.99548, 144.99548)

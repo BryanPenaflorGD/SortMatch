@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://m68w8sho70cu"]
+
+[ext_resource type="Script" uid="uid://chlecamf7adq7" path="res://Scripts/GameManager.gd" id="1_kln2b"]
+[ext_resource type="PackedScene" uid="uid://clieapfe8eg61" path="res://Scenes/Sweets/GummyCookie.tscn" id="2_jw32o"]
+[ext_resource type="PackedScene" uid="uid://bljaef2dan7d6" path="res://Scenes/Sweets/DonutBlue.tscn" id="3_50glp"]
+[ext_resource type="PackedScene" uid="uid://cfthgvadf713l" path="res://Scenes/Sweets/ChocoRed.tscn" id="3_bmxlf"]
+[ext_resource type="PackedScene" uid="uid://cagtqu77dmvtm" path="res://Scenes/Shelf.tscn" id="3_rgh2o"]
+[ext_resource type="PackedScene" uid="uid://2l7335wcvaw1" path="res://Scenes/Sweets/DonutPink.tscn" id="4_vy5pj"]
+[ext_resource type="PackedScene" uid="uid://dj457owpdtufo" path="res://Scenes/Sweets/ChocoOrange.tscn" id="5_bmxlf"]
+[ext_resource type="Texture2D" uid="uid://vmyfktnmv4bi" path="res://Assets/AI Assets/Background IMG.png" id="6_50glp"]
+[ext_resource type="PackedScene" uid="uid://dlxspoou5tmk7" path="res://Scenes/Sweets/GummyMatcha.tscn" id="7_4kpch"]
+[ext_resource type="PackedScene" uid="uid://c3l4xwi18iujr" path="res://Scenes/Leftover Tray.tscn" id="8_50glp"]
+
+[node name="Main" type="Node2D" unique_id=272897015 node_paths=PackedStringArray("leftover_tray")]
+script = ExtResource("1_kln2b")
+item_scenes = Array[PackedScene]([ExtResource("5_bmxlf"), ExtResource("3_bmxlf"), ExtResource("3_50glp"), ExtResource("4_vy5pj"), ExtResource("2_jw32o"), ExtResource("7_4kpch")])
+leftover_tray = NodePath("Leftover Tray")
+
+[node name="Bg" type="Sprite2D" parent="." unique_id=1098642439]
+z_index = -18
+position = Vector2(964, 536)
+scale = Vector2(0.73674893, 0.73674893)
+texture = ExtResource("6_50glp")
+
+[node name="Shelf" parent="." unique_id=1158264265 instance=ExtResource("3_rgh2o")]
+position = Vector2(86, 73)
+scale = Vector2(0.28940117, 0.28940117)
+
+[node name="Shelf2" parent="." unique_id=814821391 instance=ExtResource("3_rgh2o")]
+position = Vector2(459, 73)
+scale = Vector2(0.28940105, 0.28940105)
+
+[node name="Shelf3" parent="." unique_id=1798212179 instance=ExtResource("3_rgh2o")]
+position = Vector2(838, 73)
+scale = Vector2(0.28940085, 0.28940085)
+
+[node name="Shelf4" parent="." unique_id=1612799246 instance=ExtResource("3_rgh2o")]
+position = Vector2(1269, 73)
+scale = Vector2(0.28940073, 0.28940073)
+
+[node name="Shelf5" parent="." unique_id=1511536744 instance=ExtResource("3_rgh2o")]
+position = Vector2(86, 328)
+scale = Vector2(0.28940117, 0.28940117)
+
+[node name="Shelf6" parent="." unique_id=1817896594 instance=ExtResource("3_rgh2o")]
+position = Vector2(86, 587)
+scale = Vector2(0.2894012, 0.2894012)
+
+[node name="Shelf7" parent="." unique_id=409234473 instance=ExtResource("3_rgh2o")]
+position = Vector2(86, 849)
+scale = Vector2(0.289401, 0.289401)
+
+[node name="Shelf8" parent="." unique_id=462772547 instance=ExtResource("3_rgh2o")]
+position = Vector2(457, 321)
+scale = Vector2(0.28940105, 0.28940105)
+
+[node name="Shelf9" parent="." unique_id=1285758927 instance=ExtResource("3_rgh2o")]
+position = Vector2(468, 594)
+scale = Vector2(0.28940105, 0.28940105)
+
+[node name="Leftover Tray" parent="." unique_id=1017377210 instance=ExtResource("8_50glp")]
+position = Vector2(1701, 1001.99994)
+scale = Vector2(0.660413, 0.660413)
